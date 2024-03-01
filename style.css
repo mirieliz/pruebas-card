@@ -40,14 +40,14 @@
 /* estilo de imagenes */
 .card-img-fluid{
     width: 100%;
-    height: 440px;
+    height: 450px;
     object-fit: cover;
 }
 
 /* body de cards celestes  */
 .card-body{
     width: 100%;
-    height: 440px;
+    height: 450px;
     top: 0;
     right: -100%;
     position: absolute;
@@ -62,7 +62,7 @@
 /* body de cards blancas */
 .card-body-2{
     width: 100%;
-    height: 100%;
+    height: 450px;
     top: 0;
     right: -105%;
     position: absolute;
@@ -88,19 +88,19 @@
 /* titulo de las cards */
 .card-title{
     text-align: center;
-    text-transform: uppercase; 
+    /* text-transform: uppercase;  */
     font-size: 28px;
     font-weight: 500;
     color: #085f63;
 }
 
 /* subtitulo de las cards */
-.card-subtitle{
+/* .card-subtitle{
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
-}
+} */
 
 /* texto de las cards */
 .card-info{
