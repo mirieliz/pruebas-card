@@ -122,3 +122,62 @@
     font-weight: 500;
     color: #49beb7;
 }
+
+/* SEGUNDO CONJUNTO DE TARJETAS */
+.card-simple{
+    margin: 0;
+    width: 50%;
+    height: 250px;
+    border-radius: 5px; 
+    position: relative;
+    cursor: pointer;   
+    display: flex;     
+}
+.container-card-2{
+    padding:0;
+    margin: 0;
+    display: flex;
+    position:-webkit-sticky;
+    height: 440px;
+}
+
+.face{
+    margin: 0;
+    width: 100%;
+    height: 280px;
+    position: relative;
+}
+
+.card-body-simple{
+    width: 100%;
+    height: 250px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body-simple-2{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(7, 179, 179);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title-simple{
+    text-align:left;
+    margin-left: 20px;
+    /* text-transform: uppercase;  */
+    font-size: 28px;
+    font-weight: 500;
+    color: #085f63;
+}
+
+.card-text{
+    font-size: 22px;
+    text-align: left;
+    margin-left: 20px;
+    color: #085f63;
+}
