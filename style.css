@@ -44,7 +44,6 @@
     top: 0;
     right: -100%;
     position: absolute;
-    /* background: #49beb7; */
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
@@ -120,6 +119,39 @@
 .v2{
     cursor: auto;
 }
+
+/* ======== ESTILO DE TARJETAS CON IMAGENES SOLAMENTE ===========*/
+
+/* altura del contenedor de card sencilla con imagen solamente */
+.imgs{
+    padding:0;
+    margin: 0;
+    display: flex;
+    position:-webkit-sticky;
+    height: 450px;
+}
+
+/* estilo de tarjetas de imagen sencilla */
+.face{
+    margin: 0;
+    width: 100%;
+    height: 280px;
+    position: relative;
+}
+
+/* ======== ESTILO DE TARJETAS CON TEXTO SOLAMENTE ========= */
+
+
+/* altura del contenedor de cards sencillas con texto solamente */
+.texts{
+    padding:0;
+    margin: 0;
+    display: flex;
+    position:-webkit-sticky;
+    height: 300px;
+
+}
+
 /* estructura de card sencilla */
 .simple{
     margin: 0;
@@ -131,36 +163,12 @@
     justify-content:center;  
 }
 
-/* altura del contenedor de card sencilla con imagen solamente */
-.imgs{
-    padding:0;
-    margin: 0;
-    display: flex;
-    position:-webkit-sticky;
-    height: 450px;
-}
-/* altura del contenedor de cards sencillas con texto solamente */
-.texts{
-    padding:0;
-    margin: 0;
-    display: flex;
-    position:-webkit-sticky;
-    height: 300px;
-
-}
-
-/* estilo de tarjetas de imagen sencilla */
-.face{
-    margin: 0;
-    width: 100%;
-    height: 280px;
-    position: relative;
-}
 
 /* cuerpo de tarjeta sencilla */
-.card-body-simple{
+.bodytext{
     width: 100%;
     height: 300px;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,8 +224,8 @@
 /* titulos de las card horizontales sencillas */
 .hsimple{
     text-align:left;
-    margin-left: 10px;
-    margin-top:150px;
+    margin-left: 30px;
+    margin-top:50px;
     margin-bottom: 30px;
     font-size: 32px;
     font-weight: 500;
@@ -228,8 +236,22 @@
 .extend{
     font-size: 16px;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 15px;
     color: #085f63;
+}
+
+.bodygrid{
+    width: 100%;
+    height: 300px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gridhor{
+    width: 100%;
+    height: 300px;
 }
