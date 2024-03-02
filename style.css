@@ -108,8 +108,11 @@
 }
 
 /* 
-    ============SEGUNDO CONJUNTO DE TARJETAS ===============
-    ========las tarjetas de esta seccion son sencillas======
+===============FILOSOFIA DE GESTION======================
+*/
+/* 
+    ============PRIMER CONJUNTO DE CARDS ===============
+    ========las cards de esta seccion son sencillas======
 */
 
 
@@ -124,9 +127,8 @@
     height: 380px;
     border-radius: 0px; 
     position: relative;
-    /* cursor: pointer;    */
     display: flex;   
-    justify-content:space-between;  
+    justify-content:center;  
 }
 
 /* altura del contenedor de card sencilla con imagen solamente */
@@ -141,9 +143,9 @@
 .texts{
     padding:0;
     margin: 0;
-    height: 300px;
     display: flex;
     position:-webkit-sticky;
+    height: 300px;
 
 }
 
@@ -175,7 +177,7 @@
 }
 
 
-/* titulos de las tarjetas sencillas */
+/* titulos de las card sencillas */
 .card-title-simple{
     text-align:left;
     margin-left: 20px;
@@ -185,7 +187,7 @@
     color: #085f63;
 }
 
-/* texto de las tarjetas sencillas */
+/* texto de las cards sencillas */
 .card-text{
     font-size: 18px;
     text-align: left;
@@ -196,11 +198,11 @@
 }
 
 /* 
-    ============TERCER CONJUNTO DE TARJETAS ================
-    ========las tarjetas de esta seccion son sencillas======
+    ============SEGUNDO CONJUNTO DE CARDS ================
+    ========las cards de esta seccion son sencillas======
     ===incluyen una combinacion de imagenes y texto simple==
 */
-/* cuerpo de tarjeta blanca sencilla */
+/* cuerpo de card blanca sencilla */
 .bgwhite{
     /* width: 100%; */
     height: 250px;
@@ -211,7 +213,7 @@
     justify-content: center; */
 }
 
-/* titulos de las tarjetas horizontales sencillas */
+/* titulos de las card horizontales sencillas */
 .hsimple{
     text-align:left;
     margin-left: 10px;
@@ -222,7 +224,7 @@
     color: #085f63;
 }
 
-/* texto de las tarjetas sencillas */
+/* texto de las card sencillas */
 .extend{
     font-size: 16px;
     text-align: left;
