@@ -7,11 +7,20 @@
     font-family: "Montserrat Alternates", sans-serif
 }
 
+/* Estilos para el título */
 .head-title{
     text-align: center;
     font-size: 32px;
     color: #085f63;
+    margin-top: 15px; /* Ajusta el margen superior según sea necesario */
 }
+/*--------------------------------------------------------------
+# para los h1
+--------------------------------------------------------------*/
+  .head-title h1 {
+    font-weight:600;
+    
+  }
 
 .container-card{
     padding:0;
