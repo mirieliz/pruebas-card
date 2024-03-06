@@ -331,6 +331,16 @@ button.normal{ /*modificacion de un boton*/
   height: 100%;
   object-fit: cover;
 }
+
+
+.card .frontface h3{
+ position: absolute;
+ bottom: 45%;
+ margin-left: 20px;
+ font-size: 35px; 
+ color: #085F63;
+}
+
 /* body de cards  */
 .card-body{
 width: 100%;
