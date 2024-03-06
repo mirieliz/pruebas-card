@@ -332,6 +332,10 @@ button.normal{ /*modificacion de un boton*/
   object-fit: cover;
 }
 
+.frontface img{
+  opacity: 75%;
+}
+
 
 .card .frontface h3{
  position: absolute;
@@ -383,6 +387,7 @@ margin-bottom: 1.5rem;
 font-size: 28px;
 font-weight: 500;
 color: #085f63;
+text-shadow: 3px 3px #22222241;
 }
 
 /* texto blanco de las cards */
