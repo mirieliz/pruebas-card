@@ -1,0 +1,944 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Montserrat Alternates", sans-serif;
+
+}
+
+button.normal{ /*modificacion de un boton*/
+
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #FFFFFF;
+  background-color: #088178;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+
+}
+
+
+
+/*--------------------------------------------------------------
+# Content (top-navbar - Header)
+--------------------------------------------------------------*/
+
+/* <!-- ======= Top barra de navegacion ======= --> */
+
+.top-navbar{
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+
+}
+
+.icon i{
+
+  color: #085f63;
+  padding-left: 4px;
+  cursor: pointer;
+  font-size: 30px;
+  
+}
+
+.icon i:hover,
+.icon a:hover{
+
+  color: #8dd7d2;
+
+}
+
+
+.login-register {
+  display: flex;
+  align-items: center; /* Esto alinea verticalmente los elementos */
+}
+
+.login-register p{
+  margin: 0; /* Esto elimina cualquier margen predeterminado */
+  margin-right: 10px; /* Esto agrega un pequeño margen entre el párrafo y el enlace */
+  font-size: 14px; /* Tamaño de letra */
+}
+
+.login-register a {
+
+  margin: 0; /* Esto elimina cualquier margen predeterminado */
+  margin-right: 10px; /* Esto agrega un pequeño margen entre el párrafo y el enlace */
+  font-size: 21px; /* Tamaño de letra */
+  color: #085f63;
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+.login-register a:hover{
+
+  color: #8dd7d2;
+
+}
+
+.logo {
+  width: 100%;
+  margin-left: -70px; 
+}
+
+/* <!-- ======= barra de navegacion ======= --> */
+
+
+#header {
+
+  width: 100%;
+  height: 120px;
+  border-radius: 10px 10px 10px 10px;
+  border: 3px solid #085f63;
+
+
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  
+}
+
+#navbar{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -60px;
+  
+
+}
+
+#navbar li{
+
+  list-style: none;
+  padding: 0 19px;
+  position: relative;
+
+}
+
+
+#navbar li a {
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color:#085f63;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+
+  color: #8dd7d2;
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #8dd7d2;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+
+}
+
+#header button.normal{ /*modificacion de un boton*/
+
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #FFFFFF;
+  background-color:#085F63;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+
+}
+
+
+#header button:hover{
+
+  background-color: #088178;
+  color: black;
+
+}
+
+#mobile{
+
+  display: none;
+  align-items: center;
+
+}
+
+#close{
+
+  display: none;
+
+}
+
+
+
+.content {/*Fondo para la primera seccion*/
+  
+  background-image: url("../img/Header/h2.png");
+  
+  padding: 0px 20px;
+  background-size: cover;
+  background-position: top 25% right 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+/*--------------------------------------------------------------
+# Slider
+--------------------------------------------------------------*/
+
+/*Caracteristicas de las imagenes del slider*/
+.carousel-item img {
+  width: 100%; /* Define el ancho deseado */
+  height: 70vh; /* Define la altura deseada */
+  background-size: cover;
+  background-position: top 25% right 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /*object-fit: cover;  Escala la imagen para que cubra todo el espacio disponible sin deformarla */
+}
+
+/*Con esto volvemos circulos los botones de slider de abajo*/
+.carousel .carousel-indicators button{
+
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+
+}
+
+/*Con esto volvemos circulos los botones de slider de los lados prev-izquierda next-derecha*/
+.carousel-control-prev{
+  background-color: #085f63;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  top: 50%; /* Posiciona los botones verticalmente en el centro */
+  transform: translateY(-50%); /* Ajusta la posición vertical */
+  left: 10px;
+}
+
+.carousel-control-next {
+  background-color: #085f63;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  top: 50%; /* Posiciona los botones verticalmente en el centro */
+  transform: translateY(-50%); /* Ajusta la posición vertical */
+  right: 10px;
+}
+
+
+/*--------------------------------------------------------------
+# Services 
+--------------------------------------------------------------*/
+
+
+
+#Services{
+  
+  text-align: center;
+
+}
+
+
+#Services h2 {
+
+  margin-top: 68px;
+  color: #085f63;
+  background-color: #8DD7D2;
+  font-size: 42px;
+  font-weight: bold;
+
+}
+
+#Services .principal-text {
+
+  color: #085f63;
+  font-size: 32px;
+
+}
+
+
+#Services .container{
+  padding: 10px;
+  margin: 50px;
+  background-color: #49beb7;
+  display: flex;
+}
+
+/* Estilos para las Cards */
+
+/* estilo de contenedor */
+.container-card{
+  padding:0;
+  margin: 0;
+  display:flex;
+  position:-webkit-sticky;
+}
+/* estilo de tarjetas */
+.card{
+  margin: 0;
+  width: 100%;
+  height: 440px;
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;        
+}
+
+/* estilo de imagenes */
+.card-img-fluid{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* body de cards  */
+.card-body{
+width: 100%;
+height: 100%;
+top: 0;
+right: -100%;
+position: absolute;
+/* background: #49beb6ab; */
+backdrop-filter: blur(5px);
+display: flex;
+flex-direction: column;
+justify-content: center;
+transition: 0.1s;
+}
+
+/* body de card oscuras */
+.bodydark{
+  background: #49beb6ab;
+}
+/* body de cards blancas */
+.bodysoft{
+background: #ffffffbd;
+}
+
+/* efecto hover de las cards celestes */
+.card:hover .card-body{
+right: 0;
+}
+
+/* efecto hover de las cards blancas */
+.card:hover .card-body-2{
+right: 0;
+}
+
+/* titulo de las cards */
+.card-title{
+text-align: center;
+/* text-transform: uppercase; */
+margin-bottom: 1.5rem;
+font-size: 28px;
+font-weight: 500;
+color: #085f63;
+}
+
+/* texto blanco de las cards */
+.card-info{
+text-align: center;
+font-size: 22px;
+line-height: 25px;
+margin: 40px 0;
+font-weight: 500;
+/* color: #FFFFFF; */
+}
+
+/* color de texto blanco de las cards */
+.textwhite {
+  color: #ffffff;
+}
+
+/* color de texto turquesa claro de las cards  */
+.textturq {
+  color:#49beb7;
+  }
+
+
+/*--------------------------------------------------------------
+# News
+--------------------------------------------------------------*/
+
+#news{
+
+  text-align: center;
+}
+
+#news .linea-separadora{
+
+  border-bottom: 2px solid #085F63; /* Grosor y color del borde */
+  margin: 20px auto; /* Margen para centrar la línea horizontalmente */
+  width: 97%;
+  
+}
+
+#news h2{
+
+  margin-top: 68px;
+  color: #085f63;
+  background-color: #8DD7D2;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+
+
+#news-hero {
+
+  background-image: url("../img/News/n1.png");
+  height: 100vh; 
+  width: 100%;
+  background-size: cover;
+  margin-top: 32px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  
+}
+
+
+#news-hero p{
+
+  color: #085F63;
+  font-size: 35px;
+  text-align: center; 
+  text-justify: inter-word; 
+  font-weight: bold;
+
+}
+
+
+#news-hero button{
+
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 100px;
+  color: #FFFFFF;
+  background-color: #085F63;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  font-weight: bold;
+  margin-right: 70px;
+
+}
+
+
+
+
+
+.linea-separadora{
+
+  border-bottom: 2px solid #085F63; /* Grosor y color del borde */
+  margin: 40px auto; /* Margen para centrar la línea horizontalmente */
+  width: 97%;
+  
+}
+
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+
+footer{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 40px;
+
+}
+
+footer .colum{
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+}
+
+footer .logo{
+
+  margin-bottom: 30px;
+  width: 263px;
+  height: 50px;
+  margin-left: 0px; 
+
+}
+
+footer .msg p{
+
+  font-size: 14px;
+  width: 360px;
+  height: 90px;
+  border-radius: 25px;
+  border: 3px solid #8DD7D2;
+  background-color: #8DD7D2;
+  padding-left: 20px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+footer .msgc p{
+
+  font-size: 12px;
+  text-decoration: none;
+  color: #222;
+  margin: 0px 0px 0px 15px;
+  font-weight: bold;
+
+}
+
+footer .msgc a{
+
+  font-size: 18px;
+  text-decoration: none;
+  color: #49BEB7;
+  margin-bottom: 10px;
+  font-weight: bold;
+  
+}
+
+footer .msgc h3{
+
+  margin-top: -40px;
+  margin-bottom: 0;
+  color: #085F63;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+
+footer .follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  width: 348px;
+  height: 113px;
+  border-radius: 25px;
+  border: 3px solid #8DD7D2;
+  background-color: #8DD7D2;
+  font-weight: bold;
+}
+
+footer .follow i {
+  margin-top: 20px;
+  font-size: 55px; 
+  color: #085f63;
+  padding-left: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer .follow p {
+
+  margin-top: 5px;
+  font-size: 20px; 
+  color: #085F63;
+  font-weight: bold;
+}
+
+
+footer .team{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+
+}
+
+footer .team h4{
+
+  color: #085F63;
+  font-weight: bold;
+}
+
+
+footer .team p{
+
+  color: #085F63;
+  margin: 0;
+}
+
+
+footer .copyright{
+
+  width: 100%;
+  text-align: center;
+  color: #085F63;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 50%;
+
+}
+
+
+/*--------------------------------------------------------------
+# masinformacion.html 
+--------------------------------------------------------------*/
+/*Fondo para la primera seccion de mas informacion*/
+
+.content-information {
+  background-color: #ffffff;
+  padding: 0px 20px;
+  background-size: cover;
+  background-position: top 25% right 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#information {
+
+  background-image: url("../img/Information/i1.png");
+  height: 100vh; 
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 32px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  
+}
+
+
+#information .lecture{
+
+  color: #085F63;
+  font-size: 35px;
+  text-align: center; 
+  text-justify: inter-word; 
+  font-weight: bold;
+
+}
+
+#information .inscription{
+
+  color: #085F63;
+  font-size: 20px;
+  text-align: center; 
+  text-justify: inter-word; 
+  font-weight: 600;
+
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Media Query (responsive) ************************************
+--------------------------------------------------------------*/
+
+
+@media (max-width:1150px){
+
+  /*--------------------------------------------------------------
+  # Top barra de navegacion
+  --------------------------------------------------------------*/
+
+
+  .top-navbar a {
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color:#085f63;
+  
+  }
+
+  .top-navbar i {
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:#085f63;
+  
+  }
+
+  .login-register p{
+    margin: 0; 
+    margin-right: 10px; 
+    font-size: 12px; 
+    
+  }
+
+
+  /*--------------------------------------------------------------
+  # Barra de navegacion
+  --------------------------------------------------------------*/
+  
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 320px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+
+  }
+
+  /* esto es para hacer el boton en la barra responsiva */
+  #navbar.active{
+
+    right:0px;
+
+  }
+  
+  #navbar li{
+
+    margin-bottom: 25px;
+
+  }
+
+  #mobile{
+
+    display: flex;
+    align-items: center;
+  
+  }
+
+  #mobile i{
+
+    color: #085f63;
+    font-size: 24px;
+    padding-left: 24px;
+
+  }
+  
+  #close{
+
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #085f63;
+    font-size: 24px;
+  }
+
+  .carousel-item img {
+    width: 100%; /* Define el ancho deseado */
+    height: 60vh; /* Define la altura deseada */
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /*object-fit: cover;  Escala la imagen para que cubra todo el espacio disponible sin deformarla */
+  }
+
+
+  /*--------------------------------------------------------------
+  # News-Hero
+  --------------------------------------------------------------*/
+
+
+
+  #news-hero {
+    background-image: url("../img/News/n1.png");
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    margin-top: 32px;
+    margin-left: 5px;
+    padding: 0px 5%; /* Ajuste para que el contenido no se desborde en pantallas pequeñas */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+  }
+  
+  #news-hero p {
+    color: #085F63;
+    font-size: 4vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    text-align: center;
+    text-justify: inter-word;
+    margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
+    font-weight: bold;
+  }
+
+  #news-hero button {
+    font-size: 2vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    font-weight: bold;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    background-color: #085F63;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    margin-right: 0;
+  }
+  
+/*--------------------------------------------------------------
+# Responsive para masinformacion.html 
+--------------------------------------------------------------*/
+
+  #information {
+    background-image: url("../img/Information/i1.png");
+    height: 70vh;
+    width: 100%;
+    background-size: contain;
+    margin-top: 32px;
+    margin-left: 5px;
+    padding: 0px 5%; /* Ajuste para que el contenido no se desborde en pantallas pequeñas */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+  }
+  
+  #information .lecture {
+    color: #085F63;
+    font-size: 4vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    text-align: center;
+    text-justify: inter-word;
+    margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #ffffff;
+
+  }
+  
+  #information .inscription {
+    color: #085F63;
+    font-size: 3vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    text-align: center;
+    text-justify: inter-word;
+    margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
+    text-shadow: 2px 2px 4px #ffffff;
+  }
+  
+
+}
+
+
+@media (max-width:799px){
+
+  .carousel-item img {
+    width: 100%; /* Define el ancho deseado */
+    height: 40vh; /* Define la altura deseada */
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /*object-fit: cover;  Escala la imagen para que cubra todo el espacio disponible sin deformarla */
+  }
+
+
+
+  footer .colum {
+    width: 100%; /* Usa el ancho completo para dispositivos pequeños */
+  }
+
+  footer .msg p {
+    width: 100%; /* Usa el ancho completo para dispositivos pequeños */
+  }
+
+  footer .msgc {
+    width: 100%; /* Usa el ancho completo para dispositivos pequeños */
+  }
+
+  footer .follow {
+    width: 100%; /* Usa el ancho completo para dispositivos pequeños */
+  }
+
+  footer .team {
+    width: 100%; /* Usa el ancho completo para dispositivos pequeños */
+  }
+
+  footer .msgc{
+
+    margin-top: 15px;
+    
+  }
+
+  
+
+
+  /*--------------------------------------------------------------
+# Responsive para masinformacion.html parrafos
+--------------------------------------------------------------*/
+  #information .lecture {
+    color: #085F63;
+    font-size: 4vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    text-align: center;
+    text-justify: inter-word;
+    margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #ffffff;
+    margin-top: -80px; 
+
+  } 
+  
+
+}

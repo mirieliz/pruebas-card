@@ -6,7 +6,24 @@
     outline: none; 
     font-family: "Montserrat Alternates", sans-serif
 }
+/*--------------------------------------------------------------
+# Content (top-navbar - Header)
+--------------------------------------------------------------*/
 
+/* <!-- ======= Top barra de navegacion ======= --> */
+
+
+/* ESTO ES PARA CONFIGURAR EL ESTILO DE LA BARRA DE NAVEGACION SIN FONDO*/ 
+
+/* eliminamos el fondo del contenedor del header */
+.bgnone{
+    background-image: none;
+}
+
+.navbar {
+    background-color: transparent !important; /* Anula el fondo de la barra de navegación */
+    color: #000; /* Color del texto de la barra de navegación */
+}
 /* Estilos para el título */
 .head-title{
     text-align: center;
@@ -18,9 +35,9 @@
 # para los h1
 --------------------------------------------------------------*/
   .head-title h1 {
-    font-weight:600;
-    
+    font-weight:600;   
   }
+
 
 .container-card{
     padding:0;
@@ -41,7 +58,7 @@
 }
 /* estilo de imagenes */
 .card-img-fluid{
-    width: 720px;  /*no se le puede dar el 100% siempre ya que las imagenes empleadas tienen diferentes dimensiones*/
+    width: 45rem;  /*no se le puede dar el 100% siempre ya que las imagenes empleadas tienen diferentes dimensiones*/
     height: 450px;
     object-fit: cover;
 }
@@ -130,17 +147,17 @@
 .container-imgs{
     padding:0;
     margin: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     position:-webkit-sticky;
-    /* height: 450px; */
+    /* height: 280px; */
 }
 
 /* estilo de tarjetas de imagen sencilla */
-.face{
+.face img{
     margin: 0;
-    width: 100%;
-    height: 380px;
+    width: 49.5vw;
+    /* height: 280px; */
     position: relative;
 }
 
@@ -180,21 +197,21 @@
 
 /* cuerpo de tarjeta en tonos claros */
 .soft{
-    background-color: aquamarine;
+    background-color: #8dd7d2;
 }
 
 /* cuerpo de tarjeta en tonos oscuros */
 .dark{
-    background-color: rgb(7, 179, 179);
+    background-color: #49beb7;
 }
 
 
 /* titulos de las card sencillas */
 .card-title-simple{
-    font-size: clamp(1.5rem,3vw + .25rem,3rem);
     text-align:left;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
+    font-size: clamp(1.5rem,3vw + .25rem,3rem);
     font-weight: 500;
     color: #085f63;
 }
@@ -206,7 +223,11 @@
     margin-left: 20px;
     margin-right: 10px;
     margin-top: 20px;
+      /* Control de la altura con base en el texto del div*/
+    height: auto;
     color: #085f63;
+    /* Control de la altura con base en el texto del div*/
+    height: auto;
 }
 
 /* 
@@ -236,7 +257,8 @@
 
 /* texto de las card sencillas */
 .extend{
-    font-size: calc(1.25vw + .25rem);
+    font-size: clamp(.2rem, 1.15vw + 0.15rem, 2rem);
+    height:auto;
     /* Nota: a traves de calc es otra manera de calcular el "ajuste" al tamaño del font-size  */
     /* font-size: clamp(.5rem,1.25vw + 0.15rem,2rem); */
     text-align: left;
@@ -254,3 +276,48 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.container-card.text {
+    margin-top: 2rem; /* Añade un margen superior para separar la sección de objetivos de las tarjetas de visión */
+   
+}
+
+.bodygrid li {
+    height: auto; /* Ajusta automáticamente la altura */
+
+}
+
+/*.container-imgs .card-group {
+    overflow: hidden; Ocultar cualquier parte de las imágenes que se 
+    extienda más allá del contenedor 
+}*/
+
+@media (max-width: 1200px) {
+   .extend,
+   .card-text {
+    font-size: clamp(1rem, 2vw, 1.5rem); /*Utiliza clamp para establecer un rango de tamaño de fuente */
+  }
+ /*   Aplicar desplazamiento vertical a la sección de objetivos */
+  .bodygrid {
+    /* Control de la altura con base en el texto del div*/
+   overflow-y: auto; 
+  }
+
+  }
+
+  @media (max-width: 768px) {
+    .container-imgs .card-group img {
+        width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+        height: auto; /* Permitir que la altura se ajuste automáticamente según el ancho */
+    }
+
+    /* segundo ajuste para medida especifica (todavia no funciona) */
+    @media(max-width:690px){
+        .face img{
+            width: auto;
+            height: 200vh;
+        }
+    }
+
+}
+   
